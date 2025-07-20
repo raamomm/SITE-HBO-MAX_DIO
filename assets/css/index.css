@@ -91,9 +91,8 @@ body{
 }
 
 
-div.section-plans{
-  width: 100%;
-    display: flex;
+div.plans{
+  display: flex;
   flex-direction: column;
   border: 1px solid white;
   width: 100%;
@@ -102,8 +101,25 @@ div.section-plans{
   align-content: center;
 }
 
+section.plans__tv{
+  margin-top: 100px;  
+  justify-content: center;
+  align-content: center;
+}
 
-.plans-tv img{
-  margin-top: 100px;
-  width: 100px;
+
+.plans__tv--img{
+  width: 80px;
+  max-width: 100%;
+  margin: 20px;
+}
+
+.wb-logo{
+  width: 30px;
+  height: 40px;
+  margin: 25px;
+}
+
+.max-logo{
+  margin: 24px;
 }
