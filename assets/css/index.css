@@ -181,18 +181,22 @@ span#month{
   align-items: center;
   justify-items: center;
   text-align: center;
-  margin: 2rem auto 0 auto; /* essa linha centraliza */
-  border: 1px solid none;
-  background: linear-gradient( 45deg,#9b34ef 0%,#490cb0 50%);
-}
-
-a#signature{
+  margin: 2rem auto 0 auto; 
+  background: var(--btn-bg-color-gradient);
+  outline: 3px solid transparent;
   color: var(--text-color);
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
+  transition: background 1s, outline 1s, transform 1s;
+  background-size: 250%;
+  cursor: pointer;
 }
 
 a#signature:hover{
-  background: transparent;
-  border: 2px solid var(--secondary-color);
+  background-color: transparent;
+  background-position: 100%;
+  outline: 2px solid var(--secondary-color);
+  transform: scale(1.05);
+
+  
 }
