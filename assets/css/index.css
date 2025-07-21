@@ -169,11 +169,11 @@ span#month{
   font-weight: normal;
 }
 
-#signature {
+.title a{
   display: flex;
   width: 15.625rem;
   height: 3.125rem;
-  border-radius: 31.25rem;
+  border-radius: 500px;
   letter-spacing: 0.25rem;
   text-transform: uppercase;
   align-content: center;
@@ -181,13 +181,15 @@ span#month{
   align-items: center;
   justify-items: center;
   text-align: center;
-  outline: 3px solid transparent;
   margin: 2rem auto 0 auto; /* essa linha centraliza */
+  border: 1px solid none;
+  background: linear-gradient( 45deg,
+      #9b34ef 0%,
+      #490cb0 50%);
 }
 
-#signature a{
+a#signature{
   color: var(--text-color);
   text-decoration: none;
   font-weight: bold;
-  
 }
