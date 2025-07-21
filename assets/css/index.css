@@ -94,7 +94,6 @@ body{
 div.plans{
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
   width: 100%;
   height: 800px;
   align-items: center;
@@ -122,4 +121,60 @@ section.plans__tv{
 
 .max-logo{
   margin: 24px;
+}
+
+
+.title{
+  margin-top:30px;
+
+}
+
+
+.title h2{
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.2;
+  font-size: 2rem;
+  font-weight: 300;
+
+}
+
+#big-title{
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.linha-gradiente{
+  width: 43.75rem;
+  height: 0.25rem;
+  margin-top: 2.5rem;
+  margin-bottom: 30px;
+  background: var(--divider-bg-color);
+}
+
+p{
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+p#money{
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+span#month{
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+#signature{
+  display: flex;
+  width: 100px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
 }
