@@ -183,13 +183,16 @@ span#month{
   text-align: center;
   margin: 2rem auto 0 auto; /* essa linha centraliza */
   border: 1px solid none;
-  background: linear-gradient( 45deg,
-      #9b34ef 0%,
-      #490cb0 50%);
+  background: linear-gradient( 45deg,#9b34ef 0%,#490cb0 50%);
 }
 
 a#signature{
   color: var(--text-color);
   text-decoration: none;
   font-weight: bold;
+}
+
+a#signature:hover{
+  background: transparent;
+  border: 2px solid var(--secondary-color);
 }
