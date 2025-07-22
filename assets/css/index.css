@@ -197,6 +197,4 @@ a#signature:hover{
   background-position: 100%;
   outline: 2px solid var(--secondary-color);
   transform: scale(1.05);
-
-  
 }
