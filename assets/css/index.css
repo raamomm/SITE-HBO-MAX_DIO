@@ -190,6 +190,7 @@ span#month{
   transition: background 1s, outline 1s, transform 1s;
   background-size: 250%;
   cursor: pointer;
+  animation: wiggle 2.2s linear infinite;
 }
 
 a#signature:hover{
@@ -197,4 +198,36 @@ a#signature:hover{
   background-position: 100%;
   outline: 2px solid var(--secondary-color);
   transform: scale(1.05);
+}
+
+@keyframes wiggle{
+  0%{
+    transform: rotate(0);
+  }
+
+  15%{
+    transform: rotate(-15deg);
+  }
+
+  20%{
+    transform: rotate(10deg);
+  }
+
+  25%{
+    transform: rotate(-10deg);
+  }
+
+  30%{
+    transform: rotate(10deg);
+  }
+
+  35%{
+    transform: rotate(-10deg);
+  }
+
+  40%, 100%{
+    transform: rotate(0);
+  }
+
+
 }
