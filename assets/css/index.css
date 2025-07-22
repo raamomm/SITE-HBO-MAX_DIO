@@ -227,6 +227,22 @@ p.text--small{
   margin-top: 40px;
 }
 
+
+/* Custom Scroll */
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--tertiary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: var(--secondary-color);
+}
+
 /* Animations */
 
 @keyframes wiggle{
