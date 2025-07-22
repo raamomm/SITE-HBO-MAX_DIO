@@ -48,6 +48,7 @@ body{
     margin: auto;
     flex-direction: row;
     padding: 12px 16px;
+    top: 0;
 
 
 }
@@ -116,31 +117,31 @@ div.plans::after{
 
 
 section.plans__tv{
-  margin-top: 60px;  
   justify-content: center;
   align-content: center;
+  margin: -2.5rem 0 0 0;
 }
 
 
 .plans__tv--img{
-  width: 80px;
+  width: 100px;
   max-width: 100%;
-  margin: 20px;
+  margin: 0 0.9375rem 1.5625rem 0.9375rem;
 }
 
 .wb-logo{
-  width: 30px;
-  height: 40px;
-  margin: 25px;
+  width: 1.875rem;
+  height: 2.5rem;
+  margin: 0.625rem 0.9375rem 2rem 0.9375rem;
 }
 
 .max-logo{
-  margin: 24px;
+  margin: 2.1875rem 0.9375rem ;
 }
 
 
 .title{
-  margin-top:30px;
+  margin-top: 1.25rem;
 
 }
 
@@ -159,30 +160,35 @@ section.plans__tv{
   font-size: 3rem;
 }
 
+/* Linha gradiente */
+
 .linha-gradiente{
   width: 43.75rem;
-  height: 0.25rem;
+  height: 0.3125rem;
   margin-top: 2.5rem;
   margin-bottom: 30px;
   background: var(--divider-bg-color);
 }
 
-p{
-  font-size: 1.2rem;
+p.text--normal{
+  font-size: 1.25rem;
   text-align: center;
   line-height: 1.5;
 }
 
 p#money{
-  font-size: 2rem;
+  font-size: 2.25rem;
   font-weight: bold;
   text-align: center;
+  font-family: "Raleway", sans-serif;
 }
 
 span#month{
   font-size: 1rem;
   font-weight: normal;
 }
+
+/* Primeira chamada para a aquisição de plano da HBO */
 
 .title a{
   display: flex;
@@ -213,6 +219,12 @@ a#signature:hover{
   background-position: 100%;
   outline: 2px solid var(--secondary-color);
   transform: scale(1.05);
+}
+
+p.text--small{
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 40px;
 }
 
 /* Animations */
