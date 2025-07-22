@@ -37,6 +37,7 @@ body{
     background-color: var(--primary-color);
   }
 
+ /* Menu de navegação */ 
 
 .navbar{
     display: flex;
@@ -53,6 +54,8 @@ body{
 
 }
 
+/* Logo da HBOX no menu de navegação */
+
 .navbar__logo{
     width: 10rem;
 }
@@ -64,6 +67,9 @@ body{
 .menu div{
     margin-right: 0.5rem;
 }
+
+
+/* Botões Entrar e assine agora */
 
 
 .menu__item{ 
@@ -90,6 +96,8 @@ body{
     background-color: var(--btn-link-bg-color);
     color: var(--btn-link-color);
 }
+
+/* Conteúdo de chamada para assinar o plano com promoção */
 
 
 div.plans{
@@ -123,6 +131,8 @@ section.plans__tv{
 }
 
 
+/* Logo das produtoras de contéudo */
+
 .plans__tv--img{
   width: 100px;
   max-width: 100%;
@@ -144,6 +154,8 @@ section.plans__tv{
   margin-top: 1.25rem;
 
 }
+
+/* Títulos da primeira chamada para assinar o plano da HBO MAX */
 
 
 .title h1{
@@ -176,14 +188,14 @@ p.text--normal{
   line-height: 1.5;
 }
 
-p#money{
+p.money{
   font-size: 2.25rem;
   font-weight: bold;
   text-align: center;
   font-family: "Raleway", sans-serif;
 }
 
-span#month{
+span.month{
   font-size: 1rem;
   font-weight: normal;
 }
@@ -232,7 +244,7 @@ p.text--small{
 main{
   width: 100%;
   height: 80vh;
-  margin-top: 30px;
+  margin-top: 60px;
   background: url('../images/background-movies-series.png') no-repeat;
   background-size: cover;
 
@@ -241,9 +253,39 @@ main{
 }
 
 h2.main__title{
+  font-size: 2rem;
   font-weight: 500;
   text-align: center;
 }
+
+.main__box{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: -60px auto;
+  height: auto;
+  padding: 100px 300px;
+}
+
+.main__box--container{
+    display: flex;
+    width: 500px;
+    border: 1px solid none;
+    border-radius: 5px;
+    height: 500px;
+    margin: 0 100px;
+    background: var(--card-bg-color);
+    padding: 30px;
+
+}
+
+.money.color{
+  color: var(--secondary-color);
+}
+
+
+
+
 
 
 
