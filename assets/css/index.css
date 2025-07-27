@@ -374,9 +374,24 @@ a.signature.card__signature{
   border: 1px solid white;
   text-align: center;
   
-
-
 }
+
+.animated__cards--box{
+  width: 1200px;
+  height: 530px;
+  border: 1px solid white;
+  margin: 40px auto;
+  justify-content: space-between;
+}
+
+.animated__cards--box img{
+  width: 340px;
+  height: auto;
+  border: 1px solid white;
+  margin: 0 20px 20px;
+}
+
+
 
 
 
