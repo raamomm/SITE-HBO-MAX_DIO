@@ -367,8 +367,8 @@ a.signature.card__signature{
 
 .animated__cards{
   display: flex;
-  flex-direction: column;
-  width: 100%;
+  flex-direction: row;
+  width: 1200px;
   height: auto;
   margin: 200px auto 0;
   border: 1px solid white;
@@ -377,6 +377,7 @@ a.signature.card__signature{
 }
 
 .animated__cards--box{
+  display: flex;
   width: 1200px;
   height: auto;
   margin: 40px auto;
@@ -384,16 +385,25 @@ a.signature.card__signature{
 }
 
 .animated__cards--box img{
+  display: flex;
   width: 340px;
   height: auto;
   margin: 0 20px 40px;
-  border-radius: 5px;
+  border-radius: 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 2px solid transparent;
+  transition: transform 0.8s, background 0.8s, border 1s;
+  
 }
 
 /* Animações de transição dos cards dos universos da HBO */
 
-.hbo:hover{
-  outline: var(--tertiary-color);
+.animated__cards--box img:hover{
+  border: 3px solid var(--tertiary-color);
+  scale: 1.05;
+  
 }
 
 
