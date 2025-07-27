@@ -247,7 +247,7 @@ main{
   min-height: 80vh;
   margin-top: 60px;
   background: url('../images/background-movies-series.png') no-repeat;
-  background-size: cover;
+  background-size: contain;
   
 }
 
@@ -426,7 +426,7 @@ footer{
   align-content: center;
   width: 100%;
   height: auto;
-  margin: 100px auto 0;
+  margin: 9.375rem auto 0;
 
 }
 
@@ -434,11 +434,11 @@ footer{
   
   justify-content: center;
   text-align: center;
-  margin-bottom: -30px;
+  margin-bottom: -1.875rem;
 }
 
 .footer__titles a{
-  margin: 0 20px;
+  margin: 0 1.25rem;
   color: var(--link-color);
   text-decoration: none;
   font-weight: 700;
@@ -449,13 +449,13 @@ footer{
 .text--rights{
   font-size: 0.80rem;
   color: var(--link-color);
-  margin-bottom: 30px;
+  margin-bottom: 2.5rem;
 }
 
 .social__media{
   display: flex;
-  width: 200px;
-  height: 200px;
+  width: 12.5rem;
+  height: 6.25rem;
   margin: auto;
   justify-content: space-between;
   align-content: center;
@@ -463,7 +463,7 @@ footer{
 }
 
 .social__media img{
-  margin: 0 10px;
+  margin: 0 0.625rem;
 }
 
 /* Footer - links com mudanças de cor */
