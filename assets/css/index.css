@@ -442,6 +442,24 @@ a.signature.card__signature{
   background-image: url("../images/MAX-Hover.webp");
 }
 
+.contents__card:nth-child(3):hover {
+  background-image: url("../images/DC-Hover.webp");
+}
+
+.contents__card:nth-child(4):hover {
+  background-image: url("../images/WB-Hover.webp");
+}
+
+
+.contents__card:nth-child(5):hover {
+  background-image: url("../images/CN-Hover.png");
+}
+
+
+.contents__card:nth-child(6):hover {
+  background-image: url("../images/UCL-Hover.webp");
+}
+
 
 
 
