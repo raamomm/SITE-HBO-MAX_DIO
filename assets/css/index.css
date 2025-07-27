@@ -379,45 +379,67 @@ a.signature.card__signature{
 }
 
 .contents__card{
+  width: 100%;
+  max-width: 340px;
+  height: auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  
   height: auto;
   margin: 20px auto;
-  transition: transform 0.8s, background 0.8s, border 1s;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: center;
+  transition: /*transform 0.8s,*/ background 0.8s, border 1s;
 }
 
 .contents__image{
-  background-position: center;
-  object-fit: cover;
-}
-
-.contents__image img{
-  width: 340px;
+  width: 100%;
+  max-width: 340px;
   height: auto;
-  margin: 0 5px 40px 0 ;
-  border-radius: 16px;
+  object-fit: cover;
+  object-position: center;
+  transition: opacity 2s;
+  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border: 2px solid transparent;
-  
-  
+  border-radius: 16px;
 }
+
+.contents__image img{
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  margin: 0 5px 40px 0 ;  
+}
+
+
 
 /* Animações de transição dos cards dos universos da HBO */
 
-.contents__image:hover{
+.contents__card:hover{
+  border-radius: 16px;
   border: 2px solid var(--tertiary-color);
-  scale: 1.05;
-  opacity: 0;
-  
+  width: 100%;
+  object-fit: cover;
+  background-size: center;
+  background-position: center;
 }
 
-.content__image:nth-child(1):hover {
+.contents__card:hover .contents__image {
+  opacity: 0;
+}
+
+.contents__card:nth-child(1):hover {
   background-image: url("../images/hbo-hover_0.webp");
+
+}
+
+.contents__card:nth-child(2):hover {
+  background-image: url("../images/MAX-Hover.webp");
 }
 
 
