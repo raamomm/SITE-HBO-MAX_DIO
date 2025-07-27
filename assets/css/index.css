@@ -368,42 +368,56 @@ a.signature.card__signature{
 .animated__cards{
   display: flex;
   flex-direction: row;
-  width: 1200px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
   height: auto;
-  margin: 200px auto 0;
+  margin: 20px auto;
   border: 1px solid white;
   text-align: center;
   
 }
 
-.animated__cards--box{
+.contents__card{
   display: flex;
-  width: 1200px;
-  height: auto;
-  margin: 40px auto;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
+  
+  height: auto;
+  margin: 20px auto;
+  transition: transform 0.8s, background 0.8s, border 1s;
 }
 
-.animated__cards--box img{
-  display: flex;
+.contents__image{
+  background-position: center;
+  object-fit: cover;
+}
+
+.contents__image img{
   width: 340px;
   height: auto;
-  margin: 0 20px 40px;
+  margin: 0 5px 40px 0 ;
   border-radius: 16px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   border: 2px solid transparent;
-  transition: transform 0.8s, background 0.8s, border 1s;
+  
   
 }
 
 /* Animações de transição dos cards dos universos da HBO */
 
-.animated__cards--box img:hover{
-  border: 3px solid var(--tertiary-color);
+.contents__image:hover{
+  border: 2px solid var(--tertiary-color);
   scale: 1.05;
+  opacity: 0;
   
+}
+
+.content__image:nth-child(1):hover {
+  background-image: url("../images/hbo-hover_0.webp");
 }
 
 
