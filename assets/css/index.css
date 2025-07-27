@@ -373,7 +373,6 @@ a.signature.card__signature{
   max-width: 1200px;
   height: auto;
   margin: 20px auto;
-  border: 1px solid white;
   text-align: center;
   
 }
@@ -391,13 +390,13 @@ a.signature.card__signature{
   background-position: center;
   background-repeat: no-repeat;
   object-fit: center;
-  transition: /*transform 0.8s,*/ background 0.8s, border 1s;
+  transition: transform 0.8s, background 0.8s, border 1s, opacity 0.8s;
 }
 
 .contents__image{
   width: 100%;
   max-width: 340px;
-  height: auto;
+  height: 500px;
   object-fit: cover;
   object-position: center;
   transition: opacity 2s;
@@ -425,8 +424,9 @@ a.signature.card__signature{
   border: 2px solid var(--tertiary-color);
   width: 100%;
   object-fit: cover;
-  background-size: center;
+  background-size: cover;
   background-position: center;
+  transform: scale(1.1);
 }
 
 .contents__card:hover .contents__image {
