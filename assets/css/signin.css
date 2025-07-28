@@ -1,24 +1,65 @@
+@import url(./global.css);
 @import url(./index.css);
 
-#signin{
-    width: 100%;
-    height: 100vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border: 1px solid white;
-}
 
-
-
-.box{
-    width: 100%;
+.container{
     display: flex;
     justify-content: center;
     justify-items: center;
-    align-content: center;
     align-items: center;
+    align-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -60px;
+}
+
+.container__box{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    
+}
+
+
+.box{
     width: 800px;
     height: 400px;
-    border: 1px solid white;
+    padding: 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background: var( --form-bg-color);
+
+
+}
+
+.box h1{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+
+}
+
+.box p{
+    margin: 40px 20px;
+}
+
+input{
+    width: 700px;
+    height: 45px;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--form-field-bg-color);
+    border: var(--form-field-border);
+    color:white;
+}
+
+input::placeholder{
+    color: white;
 }

@@ -2,60 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 @import url(./global.css);
 
-  :root {
-    --primary-color: #020228;
-    --secondary-color: #ff00e5;
-    --tertiary-color: #b535f6;
-    --btn-bg-color-gradient: linear-gradient(
-      45deg,
-      #9b34ef 0%,
-      #490cb0 20%,
-      transparent 50%
-    );
-    --btn-link-bg-color: #fff;
-    --btn-link-color: #000;
-    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
-    --divider-bg-color: linear-gradient(
-      90deg,
-      #5516ba,
-      rgba(255, 0, 229, 0.5) 80%
-    );
-    --nav-bg-color: rgba(0, 0, 0, 0.3);
-    --text-color: #fff;
-    --link-color: #9e86ff;
-    --form-bg-color: rgba(211, 211, 211, 0.06);
-    --form-field-bg-color: rgba(0, 0, 0, 0.2);
-    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
-    --form-field-placeholder: rgba(255, 255, 255, 0.7);
-    --form-field-error: rgb(255, 76, 76);
-
-    scroll-behavior: smooth;
-  }
 
 body{
     margin: auto;
     background-color: var(--primary-color);
   }
-
- /* Menu de navegação */ 
-
-.navbar{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    background-color: var(--nav-bg-color);
-    color: var(--text-color);
-    margin: auto;
-    flex-direction: row;
-    padding: 12px 16px;
-    top: 0;
-    z-index: 1;
-
-
-}
-
 
 
 /* Logo da HBOX no menu de navegação */
@@ -424,64 +375,6 @@ a.signature.card__signature{
   height: auto;
   /*margin: 0 0.3125rem 2.5rem 0 ;*/
 }
-
-/* Footer titles */
-
-footer{
-  text-align: center;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  align-content: center;
-  width: 100%;
-  height: auto;
-  margin: 9.375rem auto 0;
-
-}
-
-.footer__titles{
-  
-  justify-content: center;
-  text-align: center;
-  margin-bottom: -1.875rem;
-}
-
-.footer__titles a{
-  margin: 0 1.25rem;
-  color: var(--link-color);
-  text-decoration: none;
-  font-weight: 700;
-  transition: 0.5s linear;
-  text-transform: uppercase;
-}
-
-.text--rights{
-  font-size: 0.80rem;
-  color: var(--link-color);
-  margin-bottom: 2.5rem;
-}
-
-.social__media{
-  display: flex;
-  width: 12.5rem;
-  height: 6.25rem;
-  margin: auto;
-  justify-content: space-between;
-  align-content: center;
-  align-items: center;
-}
-
-.social__media img{
-  margin: 0 0.625rem;
-}
-
-/* Footer - links com mudanças de cor */
-
-.footer__titles a:hover{
-  color: white;
-
-}
-
 
 
 /* Animações de transição dos cards dos universos da HBO */
