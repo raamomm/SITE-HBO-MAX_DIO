@@ -32,6 +32,10 @@
   }
 
 
+  body{
+    overflow: hidden;
+  }
+
 .container{
     display: flex;
     justify-content: center;
@@ -40,14 +44,16 @@
     align-content: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: -60px;
+    margin-bottom: -200px;
+    height: 100vh;
+    max-height: 800px;
 }
 
 .container__box{
     display: flex;
     width: 100%;
     max-width: 1200px;
-    height: 600px;
+    height: 37.5rem;
     align-items: center;
     align-content: center;
     justify-items: center;
@@ -55,11 +61,10 @@
     
 }
 
-
 .box{
-    width: 800px;
-    height: 400px;
-    padding: 20px;
+    width: 50rem;
+    height: 25rem;
+    padding: 1.25rem;
     border: 1px solid transparent;
     border-radius: 5px;
     background: var( --form-bg-color);
@@ -69,8 +74,8 @@
 
 .login__title{
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 20px;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem;
     text-align: center;
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -79,16 +84,16 @@
 
 .login__label{
     display: block;
-    margin: 20px 10px;
+    margin: 1.25rem 0.625rem;
 }
 
 
 input{
-    width: 700px;
-    height: 50px;
-    margin: 10px;
+    width: 43.75rem;
+    height: 3.125rem;
+    margin: 0.625rem;
     border-radius: 10px;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: var(--form-field-bg-color);
     border: var(--form-field-border);
     color:white;
@@ -117,17 +122,17 @@ div.buttons{
     align-content: center;
     justify-content: center;
     justify-items: center;
-    width: 330px;
-    height: 100px;
-    margin: 10px 10px;
+    width: 20.625rem;
+    height: 6.25rem;
+    margin: 0.625rem;
 
 }
 
 button.signature.card__signature.signin{
     display: flex;
-    width: 150px;
-    margin-left: 5px;
-    margin-top: -5px;
+    width: 9.375rem;
+    margin-left: 0.3125rem;
+    margin-top: -0.3125rem;
     border: 1px solid transparent;
     animation: none;
 
