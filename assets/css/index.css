@@ -162,7 +162,7 @@ span.month{
 
 /* Primeira chamada para a aquisição de plano da HBO */
 
-a.signature{
+a.signature, button{
   display: flex;
   width: 15.625rem;
   height: 3.125rem;

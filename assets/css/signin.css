@@ -1,6 +1,36 @@
 @import url(./global.css);
 @import url(./index.css);
 
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(
+      45deg,
+      #9b34ef 0%,
+      #490cb0 20%,
+      transparent 50%
+    );
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(
+      90deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 80%
+    );
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
+  }
+
 
 .container{
     display: flex;
@@ -37,29 +67,83 @@
 
 }
 
-.box h1{
+.login__title{
     width: 100%;
+    margin-top: 30px;
+    margin-bottom: 20px;
     text-align: center;
     font-size: 1.5rem;
     text-transform: uppercase;
 
 }
 
-.box p{
-    margin: 40px 20px;
+.login__label{
+    display: block;
+    margin: 20px 10px;
 }
+
 
 input{
     width: 700px;
-    height: 45px;
+    height: 50px;
     margin: 10px;
     border-radius: 10px;
     padding: 10px;
     background-color: var(--form-field-bg-color);
     border: var(--form-field-border);
     color:white;
+    outline: none;
+
+    
 }
+
+input:invalid{
+    border: 1px solid rgb(255, 76, 76);
+}
+
 
 input::placeholder{
     color: white;
+    
 }
+
+
+
+div.buttons{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 330px;
+    height: 100px;
+    margin: 10px 10px;
+
+}
+
+button.signature.card__signature.signin{
+    display: flex;
+    width: 150px;
+    margin-left: 5px;
+    margin-top: -5px;
+    border: 1px solid transparent;
+    animation: none;
+
+}
+
+button.signature.card__signature.signin:hover{
+  background-color: transparent;
+  background-position: 100%;
+  outline: 2px solid var(--secondary-color);
+  transform: scale(1.05);
+}
+
+
+.forget-password{
+    color: var(--link-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+

@@ -26,15 +26,17 @@
         <div class="container__box" id="signin">
 
             <div class="box">
-                <h1>Entrar</h1>
-                <p>Você tem uma conta da HBOX MAX?</p>
 
                 <form>
-                    <label for="email"></label><input type="email" name="email" id="email" required placeholder="Endereço de e-mail"><br>
-                    <label for="passowrd"></label><input type="password" name="senha" id="senha" minlength="8" required placeholder="Senha"><br>
+                    <h1 class="login__title">Entrar</h1>
+                    <label class="login__label">Você tem uma conta da HBOX MAX?</label>
+                    <input type="email" name="email" id="email" required placeholder="Endereço de e-mail"><br>
+                    <input type="password" name="senha" id="senha" minlength="8" required placeholder="Senha"><br>
 
-                    <a href="">Entrar</a>
-                    <a href="">Esqueceu a senha</a>
+                    <div class="buttons">
+                        <button type="submit" class="signature card__signature signin">Entrar</button>
+                        <a href=""class="forget-password">Esqueceu a senha?</a>
+                    </div>
                 </form>
 
 
