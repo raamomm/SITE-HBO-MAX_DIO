@@ -56,6 +56,8 @@ body{
 
 }
 
+
+
 /* Logo da HBOX no menu de navegação */
 
 .navbar__logo{
@@ -100,6 +102,10 @@ body{
 }
 
 /* Conteúdo de chamada para assinar o plano com promoção */
+
+.main{
+  scroll-margin-top: 80px;
+}
 
 
 div.plans{
@@ -254,7 +260,8 @@ main{
 }
 
 .main{
-  perspective: 300px;
+  perspective: 2000px;
+  perspective-origin: top;
 }
 
 h2.main__title{
