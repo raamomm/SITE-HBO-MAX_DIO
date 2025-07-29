@@ -145,3 +145,97 @@ footer{
   color: white;
 
 }
+
+/* Acessibilidade para dispositivos móveis */
+
+
+@media screen and (min-width: 360px) and (max-width: 1200px){
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 360px;
+    height: 150px;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    max-width: 360px;
+    height: auto;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+  }
+
+  .navbar img{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+  }
+
+  .card__box{
+    min-width: 414px;
+    min-height: 1400px;
+    flex-wrap: wrap;
+    
+  }
+
+  .card__box--container{
+    min-width: 414px;
+    min-height: 650px;
+    animation: none;
+    transition: none;
+    transform: none;
+  
+  }
+
+  .contents__card{
+    animation: none !important;
+    transition: none!important;
+    transform: none !important;
+  }
+
+  a.signature, button{
+    padding: 2.5rem;
+    line-height: 1.5;
+    transition: none !important;
+    animation: none !important;
+    transform: none !important;
+    background: auto;
+  }
+
+  a.signature:hover{
+    background-position: 100% !important;
+    transform: none !important;
+    border: none;
+  }
+
+  .contents__card:hover{
+    animation: none !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  @media (pointer: coarse) {
+  .contents__card:hover {
+    transform: none;
+  }
+
+}
+
+  .card__box:has(.card--mobile:hover) .card--multitelas {
+    transform: none !important;
+}
+
+.card__box:has(.card--multitelas:hover) .card--mobile{
+  transform: none !important;
+
+}
+
+}

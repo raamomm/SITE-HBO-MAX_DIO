@@ -224,6 +224,7 @@ h2.main__title{
 .card__box{
   display: flex;
   justify-content: center;
+  border: 1px solid white;
 
   width: 100%;
   margin: 3.125rem auto;
