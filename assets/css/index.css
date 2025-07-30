@@ -229,16 +229,15 @@ h2.main__title{
 .card__box{
   display: flex;
   justify-content: center;
-
+  min-width: 22.5rem;
   width: 100%;
   margin: 3.125rem auto;
-  height: 37.5rem;
 }
 
 .card__box--container{
     display: flex;
     flex-direction: column;
-    min-width: 23.4375rem;
+    min-width: 22.5rem;
     max-width: 31.25rem;
     height: 31.25rem;
     border-radius: 0.3125rem;
@@ -436,7 +435,7 @@ a.signature.card__signature{
 /* Custom Scroll */
 
 ::-webkit-scrollbar{
-  width: 8px;
+  max-width: 8px;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -446,6 +445,10 @@ a.signature.card__signature{
 
 ::-webkit-scrollbar-thumb:hover{
   background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-thumb {
+
 }
 
 
