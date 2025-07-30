@@ -63,6 +63,7 @@ body{
 
 h2.title{
     width: 100%;
+    min-width: 23.4375rem;
     max-width: 1200px;
     font-size: 2rem;
     font-weight: 500;
@@ -97,6 +98,7 @@ footer{
   justify-items: center;
   align-items: center;
   align-content: center;
+  min-width: 23.4375rem;
   width: 100%;
   height: auto;
   margin: 9.375rem auto 0;
@@ -112,6 +114,7 @@ footer{
 
 .footer__titles a{
   margin: 0 1.25rem;
+  letter-spacing: 2px;
   color: var(--link-color);
   text-decoration: none;
   font-weight: 700;
@@ -170,6 +173,10 @@ footer{
     margin: auto !important;
   }
 
+  .navbar{
+    margin-bottom: 400px;
+  }
+
   .navbar__logo{
     display: flex !important;
     justify-content: center !important;
@@ -184,7 +191,9 @@ footer{
   }
 
   .menu{
+    min-width: 22.5rem;
     max-width: 480px;
+    margin: auto;
     display: flex !important;
     justify-content: center !important ;
     justify-items: center !important;
@@ -204,8 +213,8 @@ footer{
   }
 
   .plans{
-    width: 360px;
-    margin-top: 150px !important;
+    width: 22.5rem;
+    margin: 150px auto !important;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -217,7 +226,7 @@ footer{
   }
 
   .plans__tv{
-    width: 480px;
+    width: 22.5rem;
     display: flex;
     margin: auto;
     flex-wrap: wrap;
@@ -246,20 +255,22 @@ footer{
 
 
 
-@media screen and (min-width: 360px) and (max-width: 1200px){
+@media screen and (min-width: 360px) and (max-width: 1199px){
   
 
 
   .card__box{
-    min-width: 414px;
+    min-width: 22.5rem;
     min-height: 1400px;
     flex-wrap: wrap;
     
   }
 
   .card__box--container{
-    min-width: 414px;
-    min-height: 650px;
+    min-width: 20rem;
+    width: 320px;
+    margin:  30px auto;
+    min-height: 710px;
     animation: none;
     transition: none;
     transform: none;
@@ -287,6 +298,40 @@ footer{
     border: none;
   }
 
+
+  .animated__cards{
+    flex: 0 0 auto;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .animated__cards {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;        
+    gap: 10px;                
+    overflow-x: auto !important;         
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  .contents__card {
+    width: 300px !important;
+    max-width: none;
+    flex: 0 0 auto;           
+    scroll-snap-align: start;
+    overflow: visible;         
+  }
+
+  .animated__cards::-webkit-scrollbar {
+    display: none;            
+  }
+
+  .contents__image{
+    flex-direction: row;
+  }
+
   .contents__card:hover{
     animation: none !important;
     transform: none !important;
@@ -295,7 +340,7 @@ footer{
 
     .title{
     width: 100%;
-    min-width: 360px;
+    min-width: 23.4375rem;
   }
   
   .title h1{
@@ -308,15 +353,43 @@ footer{
     min-width: 20rem;
     width: 100%;
   }
-
   
+
+.footer__titles{
+  display: flex;
+  flex-direction: column;
+  min-width: 22.5rem;
+  width: 100%;
+
+}
+
+.footer__titles a{
+  margin: 8px auto;
+   font-size: 15px;
+   font-weight: 800;
+}
+
+div.rights{
+  min-width: 22.5rem;
+  max-width: 100%;
+
+}
+
+
+div.rights p{
+  white-space: wrap;
+  flex-wrap: wrap;
+}
+
 }
 
 .card__box:has(.card--mobile:hover) .card--multitelas {
+  animation: none !important;
   transform: none !important;
 }
 
 .card__box:has(.card--multitelas:hover) .card--mobile{
+  animation: none !important;
   transform: none !important;
   
 }
@@ -324,6 +397,23 @@ footer{
 
 @media (pointer: coarse) {
 .contents__card:hover {
-  transform: none;
+  transform: none !important;
 }
+}
+
+@media (pointer: coarse) {
+  .contents__card:hover {
+    transform: none !important;
+    background-image: none !important;
+    border: none !important;
+  }
+  .contents__card:hover .contents__image {
+    opacity: 1 !important;
+  }
+
+  .menu__button.menu__button--signature.button:hover{
+    color: var(--text-color);
+    background-color: var(--tertiary-color);
+    opacity: none;
+  }
 }
