@@ -55,7 +55,7 @@ body{
 /* Conteúdo de chamada para assinar o plano com promoção */
 
 .main{
-  scroll-margin-top: 80px;
+  scroll-margin-top: 160px;
 }
 
 
@@ -445,10 +445,6 @@ a.signature.card__signature{
 
 ::-webkit-scrollbar-thumb:hover{
   background: var(--secondary-color);
-}
-
-::-webkit-scrollbar-thumb {
-
 }
 
 

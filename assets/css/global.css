@@ -253,16 +253,29 @@ footer{
   }
 }
 
+@media screen and (width:540px){
+  
+}
+
 
 
 @media screen and (min-width: 360px) and (max-width: 1199px){
   
 
 
+
+  .main h2{
+    min-width: 360px;
+    padding: 0;
+    font-size: 1.5rem !important;
+    margin: auto;
+    text-align: center;
+  }
+
+
   .card__box{
-    width: 22.5rem;
+    min-width: 22.5rem;
     min-height: 87.5rem;
-    margin: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -274,9 +287,8 @@ footer{
   }
 
   .card__box--container{
-    min-width: 14rem;
+    min-width: 22.5rem;
     max-width: 100%;
-    margin: 0;
     min-height: 44.375rem;
     animation: none;
     transition: none;
