@@ -178,14 +178,17 @@ footer{
   .navbar__logo{
     display: flex !important;
     justify-content: center !important;
-    /*width: 100% !important;*/
+    align-content: center;
+    align-items: center;
+
     margin: auto !important;
   }
 
   .navbar__logo img{
-    display: block;
     max-width: 100px;
-    /*margin-right: 6.25rem;*/
+    padding: 0;
+    margin: 0 auto;
+    
   }
 
   .menu{
@@ -520,12 +523,30 @@ div.rights p{
   .cards__button a.signature.card__signature:hover{
    
     color: var(--text-color) !important;
-    border: 2px solid transparent;
+    background: var(--btn-bg-color-gradient);
     opacity: 1 !important;
-    outline: 2px solid transparent !important;
+    outline: none;
     transform: none !important;
     animation: none !important;
     transition: none !important;
+    background-size: 250%;
 
+  }
+
+  a.signature{
+    color: var(--text-color) !important;
+    background-size: 250% !important;
+    opacity: 1 !important;
+    outline: none !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  a.signature:hover{
+    background: var(--btn-bg-color-gradient) !important;
+    border: transparent;
+    outline: transparent;
+    background-size: 250% !important;
   }
 }
