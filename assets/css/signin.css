@@ -161,9 +161,14 @@ button.signature.card__signature.signin:hover{
 
 @media (pointer: coarse){
 
+    main{
+        background-image: none;
+    }
+
    main.container{
-        width: 300px;
-        margin: -25px auto;
+        min-width: 300px;
+        max-width: 600px;
+        margin: 60px auto;
         justify-content: center;
         justify-items: center;
         align-items: center;
@@ -172,20 +177,19 @@ button.signature.card__signature.signin:hover{
     }
 
     .container__box{
-        min-width: 360px;
-  
-        /*border: 1px solid white;*/
+        width: 300px;
     }
 
     .box{
-        min-width: 340px;
-  
-        /*border: 1px solid white;*/
+        width: 18.75rem;
+        height: auto;
+        margin: auto;
     }
+
     
 
     input{
-        min-width: 280px !important;
+        min-width: 200px !important;
         width: 100%;
         margin: 10px auto;
     }
@@ -208,25 +212,116 @@ button.signature.card__signature.signin:hover{
   }
 
 
-    .buttons{
-        margin: 0;
+    div.buttons{
+        max-width: 10rem;
+        display: flex;
+        margin-left: -0.3125rem;
+        align-content: flex-start;
+        justify-items: flex-start;
+        align-items: start;
+        flex-direction: column; 
+    
     }
+    
+    .buttons a{
+        text-align: left;
+        justify-content: start;
+        align-items: start;
+    }
+    
 
-    .forget-password{
-        width: 200px;
-        margin: 0;
-    }
 
     button{
-        width: 100px;
-        padding: 5px;
-        margin-left:
-        
+    min-width: 150px;
+    width: 100%;
+    padding: 5px;
+    margin: 20px auto;
+    }    
+
+    .forget-password{
+        width: 150px;
+        margin-left: 10px;
     }
+    
 
     label{
+        font-size: 0.875rem;
         text-align: center;
     }
 
+    footer{
+        min-width: 300px;
+        max-width: 100%;
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width: 390px) and (max-width: 430px){
+
+    main.container{
+        margin-top: -20px;
+    }
+
+    body{
+        margin: 0;
+        padding: 0;
+    }
+
+    footer{
+        margin: -230px auto;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+
+    main.container{
+        min-width: 600px;
+        height: auto;
+        margin: auto;
+        
+
+
+    }
+
+    .container__box{
+        width:100%;
+        max-width: 800px;
+        height: auto;
+        
+
+    }
+
+    .box{
+        min-width: 600px;
+        max-width: 800px;
+        
+    }
+
+    footer{
+        margin: -130px auto;
+        width: 100%;
+    }
+
+    div.footer__titles{
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center;
+        align-content: center;
+        justify-items: center;
+        
+    }
+
+    .footer__titles a{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        font-size: 12px;
+        
+    }
 }
     
