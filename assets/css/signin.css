@@ -102,7 +102,11 @@ input{
     
 }
 
-input:invalid{
+/*input:invalid{
+    border: 1px solid rgb(255, 76, 76);
+}*/
+
+input:user-invalid{
     border: 1px solid rgb(255, 76, 76);
 }
 
@@ -152,3 +156,77 @@ button.signature.card__signature.signin:hover{
     font-weight: 700;
 }
 
+
+/* Página de login para dispoitivos móveis*/
+
+@media (pointer: coarse){
+
+   main.container{
+        width: 300px;
+        margin: -25px auto;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+    
+    }
+
+    .container__box{
+        min-width: 360px;
+  
+        /*border: 1px solid white;*/
+    }
+
+    .box{
+        min-width: 340px;
+  
+        /*border: 1px solid white;*/
+    }
+    
+
+    input{
+        min-width: 280px !important;
+        width: 100%;
+        margin: 10px auto;
+    }
+
+ .signature{
+    color: var(--text-color) !important;
+    background-size: 250% !important;
+    opacity: 1 !important;
+    outline: none !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .signature:hover{
+    background: var(--btn-bg-color-gradient) !important;
+    border: transparent;
+    outline: transparent;
+    background-size: 250% !important;
+  }
+
+
+    .buttons{
+        margin: 0;
+    }
+
+    .forget-password{
+        width: 200px;
+        margin: 0;
+    }
+
+    button{
+        width: 100px;
+        padding: 5px;
+        margin-left:
+        
+    }
+
+    label{
+        text-align: center;
+    }
+
+}
+    
