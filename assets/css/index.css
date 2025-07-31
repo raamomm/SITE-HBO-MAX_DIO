@@ -199,7 +199,6 @@ a.signature:hover{
   background-position: 100%;
   outline: 2px solid var(--secondary-color);
   transform: scale(1.05);
-  cursor: pointer;
 }
 
 p.text--small{
@@ -405,30 +404,30 @@ a.signature.card__signature{
   opacity: 0;
 }
 
-.contents__card:nth-child(2):hover {
+.contents__card:nth-child(1):hover {
   background-image: url("../images/hbo-hover_0.webp");
 
 }
 
-.contents__card:nth-child(3):hover {
+.contents__card:nth-child(2):hover {
   background-image: url("../images/MAX-Hover.webp");
 }
 
-.contents__card:nth-child(4):hover {
+.contents__card:nth-child(3):hover {
   background-image: url("../images/DC-Hover.webp");
 }
 
-.contents__card:nth-child(5):hover {
+.contents__card:nth-child(4):hover {
   background-image: url("../images/WB-Hover.webp");
 }
 
 
-.contents__card:nth-child(6):hover {
+.contents__card:nth-child(5):hover {
   background-image: url("../images/CN-Hover.png");
 }
 
 
-.contents__card:nth-child(7):hover {
+.contents__card:nth-child(6):hover {
   background-image: url("../images/UCL-Hover.webp");
 }
 

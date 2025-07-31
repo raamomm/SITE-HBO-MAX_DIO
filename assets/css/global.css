@@ -176,16 +176,17 @@ footer{
   
 
   .navbar__logo{
+    width: auto;
     display: flex !important;
     justify-content: center !important;
     align-content: center;
     align-items: center;
-
     margin: auto !important;
   }
 
   .navbar__logo img{
     max-width: 100px;
+    height: auto;
     padding: 0;
     margin: 0 auto;
     
@@ -339,9 +340,6 @@ footer{
     min-width: 22.5rem;
     max-width: 100%;
     min-height: 44.375rem;
-    animation: none;
-    transition: none;
-    transform: none;
 
   }
 
@@ -491,18 +489,6 @@ div.rights p{
 
 }
 
-.card__box:has(.card--mobile:hover) .card--multitelas {
-  animation: none !important;
-  transform: none !important;
-}
-
-.card__box:has(.card--multitelas:hover) .card--mobile{
-  animation: none !important;
-  transform: none !important;
-  
-}
-
-
 @media (pointer: coarse) {
 
   .contents__card:hover {
@@ -549,4 +535,10 @@ div.rights p{
     outline: transparent;
     background-size: 250% !important;
   }
+
+  .card__box--container {
+    animation: none !important;
+    transition: none !important;
+    transform: none !important;
+}
 }
