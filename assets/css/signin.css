@@ -269,9 +269,43 @@ button.signature.card__signature.signin:hover{
     }
 
     footer{
-        margin: -230px auto;
+        margin: -180px auto;
     }
 
+}
+
+@media screen and (height: 507px){
+
+    header.navbar{
+        flex-direction: row !important;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        width: 428px;
+        height: 50px !important;
+        padding: 0;
+    }
+
+    .navbar__logo img{
+        width: 100px;
+        height: auto;
+        margin: 0 0 0 80px;
+    }
+
+    .menu__button.menu__button--signature.button a{
+        max-width: 30px !important;
+        margin: 0;
+        width: 40px !important;
+    }
+
+    main.container{
+        margin: 22px auto;
+    }
+
+
+    footer{
+        margin:0;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px){
@@ -318,7 +352,7 @@ button.signature.card__signature.signin:hover{
 
     div.footer__titles{
         width: 100%;
-        max-width: 600px;
+        max-width: 800px;
         display: flex;
         flex-direction: row !important;
         justify-content: space-between !important;
@@ -333,6 +367,7 @@ button.signature.card__signature.signin:hover{
         flex-direction: row;
         flex-wrap: nowrap;
         font-size: 12px;
+    
         
     }
 }
