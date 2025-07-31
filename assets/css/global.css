@@ -167,20 +167,18 @@ footer{
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-    height: 150px !important;
+    height: 150px  !important;
     padding: 32px 24px;
     gap: 24px;
-    margin: auto !important;
+    margin: 0 !important;
   }
 
-  .navbar{
-    margin-bottom: 400px;
-  }
+  
 
   .navbar__logo{
     display: flex !important;
     justify-content: center !important;
-    width: 100% !important;
+    /*width: 100% !important;*/
     margin: auto !important;
   }
 
@@ -254,7 +252,55 @@ footer{
 }
 
 @media screen and (width:540px){
+  div.plans__tv{
+    width: 100%;
+    min-width: 300px;
+    flex-wrap: wrap;
+    
+  }
+
+  .plans__tv img{
+    justify-content: space-between;
+    max-width: 70px;
+    height: 60px;
+  }
+
+  img.wb-logo{
+    width: 40px;
+    height: 40px;
+  }
+
+  img.max-logo{
+    width: 55px;
+    height: 40px;
+  }
+}
+
+@media screen and (width: 360px){
   
+  div.plans__tv{
+    width: 100%;
+    min-width: 360px;
+    flex-wrap: wrap;
+  }
+
+  
+  .plans__tv img{
+    justify-content: space-between;
+    width: 100%;
+    max-width: 20px;
+    height: 40px;
+    margin: 20px auto;
+  }
+
+  img.wb-logo{
+    width: 20px;
+    
+  }
+
+  img.max-logo{
+    width: 20px;
+  }
 }
 
 
@@ -262,7 +308,7 @@ footer{
 @media screen and (min-width: 360px) and (max-width: 1199px){
   
 
-
+  
 
   .main h2{
     min-width: 360px;
@@ -455,6 +501,7 @@ div.rights p{
 
 
 @media (pointer: coarse) {
+
   .contents__card:hover {
     transform: none !important;
     background-image: none !important;
@@ -466,7 +513,19 @@ div.rights p{
 
   .menu__button.menu__button--signature.button:hover{
     color: var(--text-color);
-    background-color: var(--tertiary-color);
+    background: var(--tertiary-color);
     opacity: none;
+  }
+
+  .cards__button a.signature.card__signature:hover{
+   
+    color: var(--text-color) !important;
+    border: 2px solid transparent;
+    opacity: 1 !important;
+    outline: 2px solid transparent !important;
+    transform: none !important;
+    animation: none !important;
+    transition: none !important;
+
   }
 }
